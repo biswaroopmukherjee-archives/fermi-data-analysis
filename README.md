@@ -1,2 +1,1 @@
-# fermi-data-analysis
-some tests with docker
+fermi_data_analysis

@@ -1,0 +1,17 @@
+version: "3"
+services:
+  fermi:
+    build: .
+    user: root
+    ports:
+      - 8888:8888
+    container_name: fermi-analysis
+    env_file:
+      - jupyter-variables.env
+    volumes:
+      - /Volumes/Processed Data:/home/fermi/Processed Data
+      - /Volumes/Programs:/home/fermi/Programs
+      - /Volumes/Media:/home/fermi/Media
+      - /Volumes/Raw Data:/home/fermi/Raw Data
+      - ./work:/home/fermi/work
+    
